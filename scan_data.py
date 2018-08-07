@@ -9,4 +9,4 @@ for file in files:
     with open(os.path.join('data', file), 'r') as f:
         data = list(csv.reader(f.readlines()))
 
-    print(data[0], data[1])
+    print(file, data[0], data[1])
